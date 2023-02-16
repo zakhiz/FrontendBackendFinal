@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #f7ede2;
+}
+
+/*! Tarjetas de productos*/
+.container__carts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.carts__foto{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 3px 10px 3px;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
+}
+
+.card__container{
+    background:rgb(188, 0, 45);
+    color: #f8f8f8;
+    border-radius: 10px 4px 10px 4px;
+    width: 400px;
+    font-family: "Kanit", sans-serif;
+    font-size: 1.08rem;
+}
+
+.btn__cart{
+  background: #000;
+  color: #f5f5f5;
+  width: 90%;
+  transition: border ease 0.4s;
+}
+.btn__cart:hover{
+  border: 1px solid rgb(188, 0, 45);
+}
+.bandera{
+  width: 38px;
+  height: 38px;
+}
+.modelo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.space{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+.container__btn{
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.container__detail{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo__detail{
+  width: 38px;
+  height: 38px;
+}
+.btn__detail{
+  color: #f5f5f5;
+  background: #000;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+/*TODO Navbar*/
+
+.title__container{
+  width: 100%;
+  background-image: url("/gr.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 170px;
+}
+
+.title{
+  font-family: "Kanit", sans-serif;
+  font-size: 3.5rem;
+  background: rgb(188, 0, 45) ;
+  display: inline-block;
+  justify-content: center;
+  padding: 10px 60px;
+  border-radius: 10px;
+  color: #f5f5f5;
+}
+.container__Navbar{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: rgb(188, 0, 45);
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+}
+
+.menu{
+  color: #f5f5f5;
+  background: #000;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.menu:hover{
+  color: #f7ede2;
+}
+
+.logged {
+  color: #000;
+  background: #f5f5f5;
+}
