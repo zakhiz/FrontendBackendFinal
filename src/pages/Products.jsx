@@ -7,7 +7,9 @@ const Products = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      let result = await fetch(`${productos}`);
+      let result = await fetch(`${productos}`,{
+        credentials: "include",
+      });
       const data = await result.json();
       setProducts(data.payload);
     };

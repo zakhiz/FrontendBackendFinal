@@ -4,10 +4,12 @@ import ItemDetail from "../components/ItemDetail";
 const ProductDetail = () => {
     const [detail,setDetail]= useState({});
     const {id} = useParams();
-    const producto = import.meta.env.VITE_APP_URL_PRODUCTS;    
+    const producto = import.meta.env.VITE_APP_URL_PRODUCTS;
     useEffect(() => {
         const fetchProduct = async () => {
-          let result = await fetch(`${producto}/${id}`);
+          let result = await fetch(`${producto}/${id}`,{
+            credentials: "include",
+          });
           const data = await result.json();
           setDetail(data.payload);
         };
