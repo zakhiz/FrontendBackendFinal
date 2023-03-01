@@ -78,7 +78,6 @@ const CarritoContainer = () => {
                   valor / u  : {price.price}
               </p>)
             }
-            <p className="valor cart__font-style">Valor Total : </p>
             <button className="btn-final cart__font-style" data-id={buy._id} onClick={handleBuy}>Finalizar Compra</button>
       </div>
     </div>
